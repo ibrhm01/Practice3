@@ -23,8 +23,14 @@ namespace Practice_2.Models
         }
         public void AssignEmployee(Employee employee)
         {
-            Employees.Add(employee);
-            employee.Projects.Add(this);
+            if (Employees.Find(item => item == employee) == null)
+            {
+                Employees.Add(employee);
+                employee.Projects.Add(this);
+                return;
+            }
+            return;
+
         }
         public void RemoveEmployee(int employeeId)
         {

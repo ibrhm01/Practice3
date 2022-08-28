@@ -25,6 +25,7 @@ namespace Practice_2
 
             Project project1 = new Project(new DateTime(2022, 8, 25), new DateTime(2022, 8, 30));
             project1.AssignEmployee(employee1);
+            //project1.RemoveEmployee(1);
             project1.AssignEmployee(employee3);
             project1.AssignEmployee(employee5);
             Project project2 = new Project(new DateTime(2022, 7, 13), new DateTime(2022, 8, 13));
